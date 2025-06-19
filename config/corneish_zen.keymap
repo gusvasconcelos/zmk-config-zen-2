@@ -43,10 +43,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp F         &kp P        &kp B        &kp J        &kp L  &kp U      &kp Y    &kp SQT   &trans
-&trans  &kp A  &kp R  &kp S         &kp T        &kp G        &kp M        &kp N  &kp E      &kp I    &kp O     &trans
-&trans  &kp Z  &kp X  &kp C         &kp D        &kp V        &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp K_COFFEE
-                      &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB    &lt 0 ENTER  &mo 2  &kp RALT
+&trans  &kp Q  &kp W  &kp F         &kp P        &kp B        &kp J        &kp L            &kp U      &kp Y    &kp SQT   &trans
+&trans  &kp A  &kp R  &kp S         &kp T        &kp G        &kp M        &kp N            &kp E      &kp I    &kp O     &trans
+&trans  &kp Z  &kp X  &kp C         &kp D        &kp V        &kp K        &kp H            &kp COMMA  &kp DOT  &kp FSLH  &kp K_COFFEE
+                      &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB    &lt 0 ENTER  &lt 4 BACKSPACE  &kp RALT
             >;
         };
 
@@ -91,6 +91,15 @@
 &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans    &ext_power EP_TOG  &kp C_PREV        &kp C_VOLUME_DOWN  &kp C_VOL_UP     &kp C_NEXT       &trans
 &trans  &trans            &trans        &trans     &trans      &trans    &out OUT_TOG       &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_CLR       &trans
                                         &trans     &trans      &trans    &kp C_PAUSE        &kp C_PLAY_PAUSE  &kp C_MUTE
+            >;
+        };
+
+        num_layer {
+            bindings = <
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &trans           &trans     &trans         &trans             &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &trans    &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_COMMAND  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &trans           &trans     &trans         &trans             &trans
+                        &trans  &kp N0  &trans    &trans  &trans           &trans
             >;
         };
     };
