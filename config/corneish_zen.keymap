@@ -30,6 +30,15 @@
         };
     };
 
+    macros {
+        fat_arrow: fat_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            label = "FAT_ARROW";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -46,7 +55,7 @@
 &trans  &kp Q  &kp W  &kp F         &kp P        &kp B        &kp J        &kp L            &kp U      &kp Y    &kp SQT   &trans
 &trans  &kp A  &kp R  &kp S         &kp T        &kp G        &kp M        &kp N            &kp E      &kp I    &kp O     &trans
 &trans  &kp Z  &kp X  &kp C         &kp D        &kp V        &kp K        &kp H            &kp COMMA  &kp DOT  &kp FSLH  &kp K_COFFEE
-                      &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB    &lt 0 ENTER  &lt 4 BACKSPACE  &kp RALT
+                      &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB    &lt 5 ENTER  &lt 4 BACKSPACE  &lt 6 DEL
             >;
         };
 
@@ -100,6 +109,33 @@
 &trans  &trans  &kp N4  &kp N5  &kp N6  &trans    &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_COMMAND  &trans
 &trans  &trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &trans           &trans     &trans         &trans             &trans
                         &trans  &kp N0  &trans    &trans  &trans           &trans
+            >;
+        };
+
+        sym_layer_1 {
+            bindings = <
+&trans  &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE         &trans  &trans           &trans     &trans         &trans             &trans
+&trans  &kp EXCL   &kp ASTRK      &kp SLASH         &kp EQUAL          &kp AMPERSAND    &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_COMMAND  &trans
+&trans  &kp TILDE  &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &trans  &trans           &trans     &trans         &trans             &trans
+                                  &kp MINUS         &kp UNDERSCORE     &tog 7           &trans  &trans           &trans
+            >;
+        };
+
+        fun_layer {
+            bindings = <
+&trans  &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN    &trans  &trans           &trans     &trans         &trans             &trans
+&trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_COMMAND  &trans
+&trans  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &trans  &trans           &trans     &trans         &trans             &trans
+                         &kp ESCAPE  &kp SPACE  &kp TAB            &trans  &trans           &trans
+            >;
+        };
+
+        sym_layer_2 {
+            bindings = <
+&trans  &trans    &trans    &trans            &trans          &trans    &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &fat_arrow         &trans
+&trans  &kp LGUI  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
+&trans  &trans    &trans    &trans            &trans          &trans    &kp AT_SIGN  &kp COLON             &kp COMMA              &kp DOT        &kp SINGLE_QUOTE   &trans
+                            &trans            &trans          &trans    &trans       &trans                &trans
             >;
         };
     };
