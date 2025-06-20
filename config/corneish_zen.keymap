@@ -52,10 +52,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp F         &kp P        &kp B        &kp J        &kp L            &kp U      &kp Y    &kp SQT   &trans
-&trans  &kp A  &kp R  &kp S         &kp T        &kp G        &kp M        &kp N            &kp E      &kp I    &kp O     &trans
-&trans  &kp Z  &kp X  &kp C         &kp D        &kp V        &kp K        &kp H            &kp COMMA  &kp DOT  &kp FSLH  &kp K_COFFEE
-                      &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB    &lt 5 ENTER  &lt 4 BACKSPACE  &lt 6 DEL
+&trans  &kp Q               &kp W           &kp F               &kp P             &kp B        &kp J        &kp L             &kp U                &kp Y            &kp SQT          &trans
+&trans  &mt LEFT_COMMAND A  &mt R LEFT_ALT  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M        &mt LEFT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &trans
+&trans  &kp Z               &kp X           &kp C               &kp D             &kp V        &kp K        &kp H             &kp COMMA            &kp DOT          &kp FSLH         &kp K_COFFEE
+                                            &lt 3 ESCAPE        &lt 1 SPACE       &lt 2 TAB    &lt 5 ENTER  &lt 4 BACKSPACE   &lt 6 DEL
             >;
         };
 
