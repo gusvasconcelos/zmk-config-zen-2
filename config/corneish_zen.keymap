@@ -50,13 +50,6 @@
             bindings = <&kp EQUAL &kp GREATER_THAN>;
             label = "FAT_ARROW";
         };
-
-        lock: lock {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp L>;
-            label = "LOCK";
-        };
     };
 
     keymap {
@@ -72,9 +65,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp K_MENU             &kp Q                &kp W            &kp F                &kp P              &kp B        &kp J        &kp L               &kp U                 &kp Y             &kp SQT           &kp PSCRN
+&kp C_AL_TASK_MANAGER  &kp Q                &kp W            &kp F                &kp P              &kp B        &kp J        &kp L               &kp U                 &kp Y             &kp SQT           &kp PSCRN
 &kp C_AL_FILE_BROWSER  &hrm LEFT_COMMAND A  &hrm LEFT_ALT R  &hrm LEFT_CONTROL S  &hrm LEFT_SHIFT T  &kp G        &kp M        &hrm RIGHT_SHIFT N  &hrm RIGHT_CONTROL E  &hrm RIGHT_ALT I  &hrm RIGHT_GUI O  &kp K_WWW
-&lock                  &kp Z                &kp X            &kp C                &kp D              &kp V        &kp K        &kp H               &kp COMMA             &kp DOT           &kp FSLH          &lock
+&kp C_SLEEP            &kp Z                &kp X            &kp C                &kp D              &kp V        &kp K        &kp H               &kp COMMA             &kp DOT           &kp FSLH          &kp C_SLEEP
                                                              &lt 3 ESCAPE         &lt 1 SPACE        &lt 2 TAB    &lt 5 ENTER  &lt 4 BACKSPACE     &lt 6 DEL
             >;
         };
