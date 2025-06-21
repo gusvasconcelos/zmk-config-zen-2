@@ -54,7 +54,7 @@
             bindings = <
 &trans  &kp Q               &kp W           &kp F               &kp P             &kp B        &kp J        &kp L              &kp U                &kp Y            &kp SQT          &trans
 &trans  &mt LEFT_COMMAND A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &trans
-&trans  &kp Z               &kp X           &kp C               &kp D             &kp V        &kp K        &kp H              &kp COMMA            &kp DOT          &kp FSLH         &kp K_COFFEE
+&trans  &kp Z               &kp X           &kp C               &kp D             &kp V        &kp K        &kp H              &kp COMMA            &kp DOT          &kp FSLH         &kp K_LOCK
                                             &lt 3 ESCAPE        &lt 1 SPACE       &lt 2 TAB    &lt 5 ENTER  &lt 4 BACKSPACE    &lt 6 DEL
             >;
         };
@@ -71,7 +71,7 @@
             bindings = <
 &trans  &trans            &trans        &trans     &trans          &trans    &kp K_REDO        &kp K_PASTE    &kp K_COPY      &kp K_CUT     &kp K_UNDO  &kp PRINTSCREEN
 &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp LOCKING_CAPS  &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &kp K_WWW
-&trans  &trans            &trans        &trans     &trans          &trans    &kp INSERT        &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END     &kp K_COFFEE
+&trans  &trans            &trans        &trans     &trans          &trans    &kp INSERT        &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END     &kp K_LOCK
                                         &trans     &trans          &trans    &kp ENTER         &kp BACKSPACE  &kp DELETE
             >;
         };
@@ -88,7 +88,7 @@
             bindings = <
 &trans  &trans            &trans        &trans     &trans      &trans    &kp K_REDO  &kp K_PASTE  &kp K_COPY      &kp K_CUT     &kp K_UNDO       &kp PRINTSCREEN
 &trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans    &trans      &kp LEFT     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp K_WWW
-&trans  &trans            &trans        &trans     &trans      &trans    &trans      &kp LEFT     &kp DOWN        &kp UP_ARROW  &kp RIGHT        &kp K_SCREENSAVER
+&trans  &trans            &trans        &trans     &trans      &trans    &trans      &kp LEFT     &kp DOWN        &kp UP_ARROW  &kp RIGHT        &kp K_LOCK
                                         &trans     &trans      &trans    &mkp MB1    &mkp MB3     &mkp MB2
             >;
         };
@@ -96,9 +96,9 @@
         media_layer {
             display-name = "Mouse";
             bindings = <
-&trans  &trans            &trans        &trans     &trans      &trans    &rgb_ug RGB_TOG    &rgb_ug RGB_EFF   &rgb_ug RGB_HUI    &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &trans
-&trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans    &ext_power EP_TOG  &kp C_PREV        &kp C_VOLUME_DOWN  &kp C_VOL_UP     &kp C_NEXT       &trans
-&trans  &trans            &trans        &trans     &trans      &trans    &out OUT_TOG       &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_CLR       &trans
+&trans  &trans            &trans        &trans     &trans      &trans    &rgb_ug RGB_TOG    &rgb_ug RGB_EFF   &rgb_ug RGB_HUI    &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &kp PSCRN
+&trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &trans    &ext_power EP_TOG  &kp C_PREV        &kp C_VOLUME_DOWN  &kp C_VOL_UP     &kp C_NEXT       &kp K_WWW
+&trans  &trans            &trans        &trans     &trans      &trans    &out OUT_TOG       &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_CLR       &kp K_LOCK
                                         &trans     &trans      &trans    &kp C_PAUSE        &kp C_PLAY_PAUSE  &kp C_MUTE
             >;
         };
