@@ -54,7 +54,7 @@
         lock: lock {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_COMMAND &kp L>;
+            bindings = <&kp LEFT_COMMAND &kp L>;
             label = "LOCK";
         };
     };
