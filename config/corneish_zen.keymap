@@ -141,7 +141,7 @@
 &trans  &kp GRAVE  &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp BACKSLASH    &trans  &trans           &trans     &trans         &trans             &trans
 &trans  &kp EXCL   &kp ASTRK      &kp SLASH         &kp EQUAL          &kp AMPERSAND    &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_COMMAND  &trans
 &trans  &kp TILDE  &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &trans  &trans           &trans     &trans         &trans             &trans
-                                  &trans            &kp MINUS          &kp UNDER        &trans  &trans           &trans
+                                  &kp MINUS         &kp UNDER          &trans           &trans  &trans           &trans
             >;
         };
 
