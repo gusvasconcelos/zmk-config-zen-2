@@ -1,4 +1,7 @@
 include:
   - board: corneish_zen_left//zmk
   - board: corneish_zen_right//zmk
-  - board: settings_reset
+  - board: corneish_zen_left//zmk
+    shield: settings_reset
+  - board: corneish_zen_right//zmk
+    shield: settings_reset
